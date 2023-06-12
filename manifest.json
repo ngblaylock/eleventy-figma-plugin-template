@@ -1,0 +1,17 @@
+{
+  "name": "Eleventy Figma Plugin Template",
+  "id": "###################",
+  "api": "1.0.0",
+  "main": "./dist/code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": [
+    "figma"
+  ],
+  "ui": "./dist/index.html",
+  "networkAccess": {
+    "allowedDomains": [
+      "none"
+    ]
+  }
+}

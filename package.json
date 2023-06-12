@@ -1,0 +1,24 @@
+{
+  "name": "eleventy-figma-plugin-template",
+  "version": "1.0.0",
+  "description": "This is a template to build the single html file from multiple files using Eleventy.js.",
+  "main": "code.js",
+  "scripts": {
+    "build:eleventy": "npx @11ty/eleventy",
+    "build:ts": "tsc -p tsconfig.json",
+    "build": "npm run build:eleventy & npm run build:ts",
+    "dev:eleventy": "npx @11ty/eleventy --serve",
+    "dev:ts": "npm run build:ts -- --watch",
+    "dev": "npm run dev:eleventy & npm run dev:ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@figma/plugin-typings": "*",
+    "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
+    "sass": "^1.63.3",
+    "typescript": "*"
+  }
+}

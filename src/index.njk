@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eleventy Figma Plugin Template</title>
+  </head>
+  <body>
+    <!-- The inlineFromFile filter path should be relative to the .eleventy.js config file -->
+
+    <!-- You can use Sass -->
+    {{ './src/style.scss' | inlineFromFile | safe }}
+    <!-- Or just use vanilla css -->
+    {{ './src/style.css' | inlineFromFile | safe }}
+    <!-- Or use both, like this example -->
+
+    <h2>Rectangle Creator</h2>
+
+    <!-- You can break up your HTML into multiple include files during development -->
+    {% include "count-input.njk" %}
+
+    <button id="create">Create</button>
+    <button id="cancel">Cancel</button>
+
+    <!-- Script tags can also be in their own file -->
+    {{ './src/script.js' | inlineFromFile | safe }}
+  </body>
+</html>
