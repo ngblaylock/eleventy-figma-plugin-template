@@ -18,7 +18,7 @@ Once that is done, you will need to get your own Figma plugin ID. In the `manife
 6. OPTIONAL: If you are new to developing plugins for Figma, you might want to read through that README.md file which has additional information this file does not have.
 7. You can delete that new plugin folder you just created. You don't need it anymore.
 
-This project is set up to use `src` as the input directory and `dist` as the output directory. The `scr` directory will include `code.ts` which is code for the Figma side of the plugin, and other files are handled by Eleventy. This setup uses Nunjucks, but you can use whatever other templating language Eleventy offers if you want. If you open `index.njk` there will be some comments guiding you on how to use the template.
+This project is set up to use `src` as the input directory and `dist` as the output directory. The `src` directory will include `code.ts` which is code for the Figma side of the plugin, and other files are handled by Eleventy. This setup uses Nunjucks, but you can use whatever other templating language Eleventy offers if you want. If you open `index.njk` there will be some comments guiding you on how to use the template.
 
 To begin development, run `npm run dev`. This will create `dist/index.html` from the Eleventy project, and `dist/code.ts` from the `code.ts` file. From here, you can go to Figma > Plugins > Development > Import Plugin from Manifest. Select this project manifest and you can start using the plugin!
 
